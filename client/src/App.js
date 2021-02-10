@@ -3,8 +3,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 
  
-import Bookmark from "./bookmark" 
-import { OperationsTable } from "./columns";
+import { BookmarksTable } from "./bookmark" 
+import { OperationsTable } from "./home";
 
 import "./App.css";
 
@@ -16,7 +16,7 @@ function App() {
           <OperationsTable  />
           </Route>
           <Route exact path="/bookmark">
-          <Bookmark  />
+          <BookmarksTable  />
           </Route>
         </Switch>
       </BrowserRouter>
